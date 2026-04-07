@@ -1,0 +1,145 @@
+/* Dashboard Grid */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+/* Cards */
+.card {
+    background-color: var(--color-card);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--color-border);
+    transition: var(--transition);
+}
+
+.card:hover {
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+}
+
+.card-stat {
+    padding: 2.4rem;
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+.card-icon {
+    width: 5rem;
+    height: 5rem;
+    background-color: var(--color-primary);
+    border-radius: var(--radius);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.card-icon i {
+    font-size: 2rem;
+    color: var(--color-white);
+}
+
+.card-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-value {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: var(--color-primary-dark);
+}
+
+.card-label {
+    font-size: 1.2rem;
+    color: var(--color-text-light);
+    font-weight: 500;
+}
+
+/* Quick Actions */
+.quick-actions {
+    background-color: var(--color-card);
+    border-radius: var(--radius);
+    padding: 3rem;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--color-border);
+}
+
+.quick-actions h3 {
+    font-size: 1.8rem;
+    color: var(--color-primary-dark);
+    margin-bottom: 2rem;
+}
+
+.actions-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}
+
+.action-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+    padding: 1.2rem 1.6rem;
+    background-color: var(--color-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius);
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--color-primary-dark);
+    transition: var(--transition);
+}
+
+.action-btn:hover {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+    border-color: var(--color-primary);
+}
+
+.action-btn i {
+    font-size: 1.4rem;
+}
+
+/* Management Cards */
+.management-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.card-management {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-management h3 {
+    font-size: 1.8rem;
+    color: var(--color-primary-dark);
+    margin-bottom: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.card-management h3 i {
+    color: var(--color-accent);
+    font-size: 1.8rem;
+}
+
+.card-management p {
+    font-size: 1.4rem;
+    color: var(--color-text-light);
+    margin-bottom: 2rem;
+    flex-grow: 1;
+}
+
+.card-actions {
+    margin-top: auto;
+}

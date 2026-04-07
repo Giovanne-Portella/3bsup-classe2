@@ -1,12 +1,274 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Seção Sup CL II</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="./src/main.jsx"></script>
-  </body>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intranet — Classe II / 3° B Sup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="config_tela.css">
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="font.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="intro.css">
+    <link rel="stylesheet" href="logo.css">
+    <link rel="stylesheet" href="responsivo.css">
+</head>
+
+<body>
+
+    <!-- Mobile Menu Toggle -->
+    <input id="menu-toggle" class="menu-toggle" type="checkbox" aria-label="Abrir menu">
+    <label for="menu-toggle" class="menu-toggle-label" title="Menu">
+        <span></span><span></span><span></span>
+    </label>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-brand">
+                <img class="logo" src="logo-cl2.png" alt="Brasão Classe II">
+                <div class="header-title">
+                    <h1>Classe II</h1>
+                    <span>3° Batalhão de Suprimento</span>
+                </div>
+            </div>
+            <nav class="nav" onclick="document.getElementById('menu-toggle').checked = false;">
+                <ul>
+                    <li><a href="#dashboard"><i class="fas fa-tachometer-alt"></i> Painel</a></li>
+                    <li><a href="#efetivo"><i class="fas fa-users"></i> Efetivo</a></li>
+                    <li><a href="#recebimento"><i class="fas fa-box"></i> Recebimento</a></li>
+                    <li><a href="#expedicao"><i class="fas fa-truck"></i> Expedição</a></li>
+                    <li><a href="#formularios"><i class="fas fa-file-alt"></i> Formulários</a></li>
+                    <li><a href="#relatorios"><i class="fas fa-chart-bar"></i> Relatórios</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="header-spacer"></div>
+
+    <!-- Dashboard -->
+    <section id="dashboard" class="section">
+        <div class="container">
+            <h2 class="section-title">Painel de Controle</h2>
+            <p class="section-subtitle">Visão geral das operações da Seção Classe II</p>
+
+            <div class="dashboard-grid">
+                <div class="card card-stat">
+                    <div class="card-icon"><i class="fas fa-boxes-stacked"></i></div>
+                    <div class="card-info">
+                        <span class="card-value">—</span>
+                        <span class="card-label">Itens em Estoque</span>
+                    </div>
+                </div>
+                <div class="card card-stat">
+                    <div class="card-icon"><i class="fas fa-clipboard-list"></i></div>
+                    <div class="card-info">
+                        <span class="card-value">—</span>
+                        <span class="card-label">Ordens Pendentes</span>
+                    </div>
+                </div>
+                <div class="card card-stat">
+                    <div class="card-icon"><i class="fas fa-user-group"></i></div>
+                    <div class="card-info">
+                        <span class="card-value">—</span>
+                        <span class="card-label">Efetivo Presente</span>
+                    </div>
+                </div>
+                <div class="card card-stat">
+                    <div class="card-icon"><i class="fas fa-truck-fast"></i></div>
+                    <div class="card-info">
+                        <span class="card-value">—</span>
+                        <span class="card-label">Entregas no Mês</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="quick-actions">
+                <h3>Ações Rápidas</h3>
+                <div class="actions-grid">
+                    <a href="#recebimento" class="action-btn"><i class="fas fa-plus-circle"></i> Novo Recebimento</a>
+                    <a href="#expedicao" class="action-btn"><i class="fas fa-paper-plane"></i> Nova Expedição</a>
+                    <a href="https://docs.google.com/spreadsheets/d/194nhh01qDig68OuoXr4eJEtPc9W4z-BFvy-SOlTPrXs/edit#gid=2051481717" target="_blank" rel="noopener noreferrer" class="action-btn"><i class="fas fa-table"></i> Planilha Efetivo</a>
+                    <a href="#formularios" class="action-btn"><i class="fas fa-file-pen"></i> Preencher Formulário</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Efetivo -->
+    <section id="efetivo" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Gerenciamento de Efetivo</h2>
+            <p class="section-subtitle">Controle e acompanhamento do pessoal da seção</p>
+
+            <div class="management-grid">
+                <div class="card card-management">
+                    <h3><i class="fas fa-list-check"></i> Escala de Serviço</h3>
+                    <p>Gerencie as escalas de serviço e disponibilidade do efetivo da Seção.</p>
+                    <div class="card-actions">
+                        <a href="https://docs.google.com/spreadsheets/d/194nhh01qDig68OuoXr4eJEtPc9W4z-BFvy-SOlTPrXs/edit#gid=2051481717" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Acessar Planilha</a>
+                    </div>
+                </div>
+                <div class="card card-management">
+                    <h3><i class="fas fa-id-card"></i> Dados do Efetivo</h3>
+                    <p>Consulte informações cadastrais e de contato dos integrantes da seção.</p>
+                    <div class="card-actions">
+                        <a href="https://docs.google.com/spreadsheets/d/194nhh01qDig68OuoXr4eJEtPc9W4z-BFvy-SOlTPrXs/edit#gid=2051481717" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Consultar</a>
+                    </div>
+                </div>
+                <div class="card card-management">
+                    <h3><i class="fas fa-calendar-days"></i> Controle de Férias</h3>
+                    <p>Acompanhe o calendário de férias e dispensas do efetivo.</p>
+                    <div class="card-actions">
+                        <span class="badge">Em breve</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recebimento -->
+    <section id="recebimento" class="section">
+        <div class="container">
+            <h2 class="section-title">Seção de Recebimento</h2>
+            <p class="section-subtitle">Controle de entrada de materiais Classe II</p>
+
+            <div class="management-grid">
+                <div class="card card-management">
+                    <h3><i class="fas fa-arrow-down"></i> Registrar Recebimento</h3>
+                    <p>Registre novos materiais recebidos com nota fiscal e conferência quantitativa.</p>
+                    <div class="card-actions">
+                        <a href="https://controle-materiais-recebidos-cl2.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Registrar</a>
+                    </div>
+                </div>
+                <div class="card card-management">
+                    <h3><i class="fas fa-magnifying-glass"></i> Materiais em Contagem</h3>
+                    <p>Acompanhe os materiais em processo de verificação quantitativa.</p>
+                    <div class="card-actions">
+                        <a href="https://controle-materiais-contagem-cl2.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Acompanhar</a>
+                    </div>
+                </div>
+                <div class="card card-management">
+                    <h3><i class="fas fa-warehouse"></i> Estoque Atual</h3>
+                    <p>Consulte a situação atual do estoque de materiais Classe II.</p>
+                    <div class="card-actions">
+                        <span class="badge">Em breve</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expedição -->
+    <section id="expedicao" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Seção de Expedição</h2>
+            <p class="section-subtitle">Controle de saída e distribuição de materiais</p>
+
+            <div class="management-grid">
+                <div class="card card-management">
+                    <h3><i class="fas fa-dolly"></i> Nova Expedição</h3>
+                    <p>Registre uma nova expedição de materiais para as OMs apoiadas.</p>
+                    <div class="card-actions">
+                        <span class="badge">Em breve</span>
+                    </div>
+                </div>
+                <div class="card card-management">
+                    <h3><i class="fas fa-route"></i> Rastreamento</h3>
+                    <p>Acompanhe o status das expedições em andamento.</p>
+                    <div class="card-actions">
+                        <span class="badge">Em breve</span>
+                    </div>
+                </div>
+                <div class="card card-management">
+                    <h3><i class="fas fa-clock-rotate-left"></i> Histórico</h3>
+                    <p>Consulte o histórico de expedições realizadas.</p>
+                    <div class="card-actions">
+                        <span class="badge">Em breve</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulários -->
+    <section id="formularios" class="section">
+        <div class="container">
+            <h2 class="section-title">Formulários de Controle</h2>
+            <p class="section-subtitle">Registro e controle de materiais da seção</p>
+
+            <div class="management-grid">
+                <div class="card card-management">
+                    <h3><i class="fas fa-clipboard-check"></i> Materiais em Contagem</h3>
+                    <p>Formulário para registro da verificação quantitativa de materiais recebidos.</p>
+                    <div class="card-actions">
+                        <a href="https://controle-materiais-contagem-cl2.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Preencher</a>
+                    </div>
+                </div>
+                <div class="card card-management">
+                    <h3><i class="fas fa-file-invoice"></i> Recebimento de Materiais</h3>
+                    <p>Formulário para registro de materiais recebidos com dados da nota fiscal.</p>
+                    <div class="card-actions">
+                        <a href="https://controle-materiais-recebidos-cl2.netlify.app/" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Preencher</a>
+                    </div>
+                </div>
+                <div class="card card-management">
+                    <h3><i class="fas fa-file-export"></i> Guia de Remessa</h3>
+                    <p>Gere guias de remessa para expedição de materiais às OMs.</p>
+                    <div class="card-actions">
+                        <span class="badge">Em breve</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Relatórios -->
+    <section id="relatorios" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Relatórios e Registros</h2>
+            <p class="section-subtitle">Consulte relatórios operacionais da seção</p>
+
+            <div class="management-grid">
+                <div class="card card-management">
+                    <h3><i class="fas fa-chart-line"></i> Relatório Mensal</h3>
+                    <p>Relatório consolidado das movimentações de materiais do mês.</p>
+                    <div class="card-actions">
+                        <span class="badge">Em breve</span>
+                    </div>
+                </div>
+                <div class="card card-management">
+                    <h3><i class="fas fa-book"></i> Livro de Registro</h3>
+                    <p>Registro cronológico de todas as operações realizadas pela seção.</p>
+                    <div class="card-actions">
+                        <span class="badge">Em breve</span>
+                    </div>
+                </div>
+                <div class="card card-management">
+                    <h3><i class="fas fa-print"></i> Imprimir Relatórios</h3>
+                    <p>Gere versões para impressão dos relatórios da seção.</p>
+                    <div class="card-actions">
+                        <span class="badge">Em breve</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p><strong>Intranet Classe II</strong> — 3° Batalhão de Suprimento</p>
+            <p class="footer-copy">&copy; 2024 Desenvolvido por Cabo Portella</p>
+        </div>
+    </footer>
+
+    <a class="btn-top" href="#" title="Voltar ao topo"><i class="fas fa-chevron-up"></i></a>
+
+</body>
+
 </html>
