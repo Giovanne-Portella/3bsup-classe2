@@ -1,0 +1,31 @@
+/* ============================================
+   Dashboard — Painel de controle
+   ============================================ */
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-bottom: 4rem;
+}
+
+/* Quick Actions */
+.quick-actions {
+    background-color: var(--color-card);
+    border-radius: var(--radius);
+    padding: 3rem;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--color-border);
+}
+
+.quick-actions h3 {
+    font-size: 1.8rem;
+    color: var(--color-primary-dark);
+    margin-bottom: 2rem;
+}
+
+.actions-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+}

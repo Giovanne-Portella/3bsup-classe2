@@ -1,0 +1,40 @@
+/* ============================================
+   Variables — Design tokens do Exército Brasileiro
+   ============================================ */
+
+:root {
+    /* Cores primárias — Verde Oliva EB */
+    --color-primary: #3d5a1e;
+    --color-primary-dark: #2a3f15;
+    --color-primary-darker: #1d2b10;
+    --color-primary-light: #5a7a3a;
+
+    /* Cores de destaque — Dourado EB */
+    --color-accent: #c5a028;
+    --color-accent-light: #d4b94a;
+
+    /* Fundos */
+    --color-bg: #f0efe8;
+    --color-bg-alt: #e8e6da;
+    --color-card: #ffffff;
+
+    /* Texto */
+    --color-text: #1a1a1a;
+    --color-text-light: #555555;
+    --color-text-muted: #888888;
+    --color-white: #ffffff;
+
+    /* Bordas */
+    --color-border: #d4d0c4;
+
+    /* Sombras */
+    --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 8px 24px rgba(0, 0, 0, 0.12);
+
+    /* Utilitários */
+    --radius: 8px;
+    --transition: all 0.3s ease;
+    --container-max: 1200px;
+    --header-height: 7rem;
+}

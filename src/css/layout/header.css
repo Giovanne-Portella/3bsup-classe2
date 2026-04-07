@@ -1,4 +1,7 @@
-/* Header */
+/* ============================================
+   Header — Cabeçalho, navegação e menu mobile
+   ============================================ */
+
 .header {
     background-color: var(--color-primary-darker);
     position: fixed;
@@ -36,6 +39,12 @@
     font-size: 1.2rem;
     color: var(--color-accent);
     font-weight: 400;
+}
+
+.logo {
+    width: 4.5rem;
+    height: auto;
+    border-radius: 4px;
 }
 
 /* Navigation */
@@ -109,45 +118,4 @@
 
 .menu-toggle:checked ~ .menu-toggle-label span:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
-}
-
-/* Back to Top */
-.btn-top {
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-    width: 4rem;
-    height: 4rem;
-    background-color: var(--color-primary);
-    color: var(--color-white);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    font-size: 1.6rem;
-    transition: var(--transition);
-    box-shadow: var(--shadow-md);
-}
-
-.btn-top:hover {
-    background-color: var(--color-primary-dark);
-    transform: translateY(-2px);
-}
-
-/* Footer */
-.footer {
-    background-color: var(--color-primary-darker);
-    padding: 3rem 0;
-    text-align: center;
-}
-
-.footer p {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 1.4rem;
-}
-
-.footer .footer-copy {
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
 }

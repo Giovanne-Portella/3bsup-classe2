@@ -1,0 +1,25 @@
+/* ============================================
+   Main — Arquivo principal de importação CSS
+   Intranet Classe II / 3° B Sup
+   ============================================ */
+
+/* Base */
+@import url('./base/reset.css');
+@import url('./base/variables.css');
+@import url('./base/typography.css');
+
+/* Layout */
+@import url('./layout/sections.css');
+@import url('./layout/header.css');
+@import url('./layout/footer.css');
+
+/* Components */
+@import url('./components/cards.css');
+@import url('./components/buttons.css');
+
+/* Pages */
+@import url('./pages/dashboard.css');
+@import url('./pages/management.css');
+
+/* Responsive */
+@import url('./responsive.css');
